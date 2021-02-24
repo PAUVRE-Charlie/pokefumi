@@ -9,15 +9,13 @@ export default function Match() {
             </div>
 
             <div id='circleContainer'>
-                <div className='menuContainer'>
-                    <a href="page1"><p>Choisir son pokémon</p><img id='circle' src={images.circle.src} alt="circle"/></a>
-                </div>
-                <div>
-                    <a href="page2">Match en cours<br/><img id='circle' src={images.circle.src} alt="circle"/></a>
-                </div>
-                <div>
-                    <a href="page">Résultats<br/><img id='circle' src={images.circle.src} alt="circle"/></a>
-                </div>
+                
+                    <a className='menuContainer' href="page1"><p>Choisir son pokémon</p><img id='circle' src={images.circle.src} alt="circle"/></a>
+                
+                    <a className='menuContainer' href="page2">Match en cours<br/><img id='circle' src={images.circle.src} alt="circle"/></a>
+               
+                    <a className='menuContainer' href="page">Résultats<br/><img id='circle' src={images.circle.src} alt="circle"/></a>
+               
             </div>
 
             <div className="informationContainer" style={{marginTop:'25vh'}}>
