@@ -44,7 +44,7 @@ code {
   list-style: none;
 }
 
-.connectionPage{
+.Matches_container {
   display: grid;
   place-items: center;
   height: 100vh;
