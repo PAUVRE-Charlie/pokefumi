@@ -35,6 +35,8 @@ export default class PokemonHttpService extends BasicHttpService {
 
   public loginUser = (userName: string) => this.post<ServiceState>(`${this.serviceUrl}/login`, {}, { name: userName })
 
+  public getPokemons = () => this.get(`${this.serviceUrl}pokemon/`, {})
+
 }
 
 async function fetchJson<T>(url: string, method: Method, options?: RequestOptions) {
@@ -48,6 +50,8 @@ async function fetchJson<T>(url: string, method: Method, options?: RequestOption
     headers : { 
         'Content-Type': 'application/json',
         'Accept': 'application/json',
+        'pragma': 'no-cache',
+      'cache-control': 'no-cache'
        },
   }
 
