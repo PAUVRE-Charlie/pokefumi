@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.homePage{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.listPages{
+  background-color: aliceblue;
+  padding: 3rem;
+  max-width: 10rem;
+
+}
+
+.pageLink{
+  color: black;
+  text-decoration: none;
+}
