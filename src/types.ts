@@ -1,3 +1,4 @@
+
 export interface PageLinkProps {
     link: string,
     text: string
@@ -6,6 +7,11 @@ export interface PageLinkProps {
 export interface User {
   id: number;
   name: string;
+}
+
+export interface Player {
+    user: User;
+    wins: number;
 }
 
 
