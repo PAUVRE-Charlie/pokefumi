@@ -24,10 +24,15 @@ code {
   background-color: aliceblue;
   padding: 3rem;
   max-width: 10rem;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .pageLink{
   color: black;
   text-decoration: none;
+}
+
+.listPlayers {
+  list-style: none;
 }

@@ -10,6 +10,7 @@ export default function home() {
             <h1>Accueil</h1>
             <div className="listPages">
                 <PageLink link="connexion" text="Connection"/>
+                <PageLink link="players" text="Joueurs"/>
             </div>
         </div>
 
