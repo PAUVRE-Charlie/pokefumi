@@ -12,8 +12,12 @@ code {
     monospace;
 }
 
+.header{
+  background-color: aliceblue;
+  padding: 1rem 0;
+}
+
 .homePage{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,5 +51,5 @@ code {
 .Matches_container {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 80vh;
 }

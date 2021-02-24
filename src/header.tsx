@@ -1,9 +1,11 @@
 import React from 'react'
+import PageLink from './pageLink'
 
-export default function header() {
+export default function Header() {
     return (
-        <div>
-            
+        <div className="header">
+            <PageLink link="" text="Accueil"/>
+            <PageLink link="connexion" text="Connection"/>
         </div>
     )
 }
