@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ToggleButton from 'react-bootstrap/ToggleButton'
 
 export function Matches() {
     return (
@@ -10,7 +11,12 @@ export function Matches() {
             
         </header>
         <body>
+            <div className="Matches_container" >
             <Form inline>
+                <Row>
+                <Col>
+                <div>
+                    
                 <Form.Label className="my-1 mr-2" htmlFor="inlineFormCustomSelectPref">
                     Choisir un adversaire
                 </Form.Label>
@@ -27,17 +33,26 @@ export function Matches() {
                         <option value="3">Nathan Olborki</option>
                         <option value="4">Rapha Krodal</option>
                 </Form.Control>
+                    
+                </div>
 
                 <Button type="submit" className="my-1">
                     Inviter le joueur
                 </Button>
-
+                </Col>
+            <Col>
+            <div>
                 <Button type="button">
-                    Générer un lien d'invitation
+                    Créer un match vide
                 </Button>
+                <label>
+                    http://charlie_vs_lemonde.com
+                </label>
+            </div>
+            </Col>
+            </Row>
             </Form>
-
-
+            </div>
         </body>
       </div>
     );

@@ -36,3 +36,9 @@ code {
 .listPlayers {
   list-style: none;
 }
+
+.Matches_container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
