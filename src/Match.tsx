@@ -7,6 +7,19 @@ export default function Match() {
             <div id='areneContainer'>
                 <img id='arene' src={images.arene.src} alt="arene"/>
             </div>
+
+            <div id='circleContainer'>
+                <div className='menuContainer'>
+                    <a href="page1"><p>Choisir son pokémon</p><img id='circle' src={images.circle.src} alt="circle"/></a>
+                </div>
+                <div>
+                    <a href="page2">Match en cours<br/><img id='circle' src={images.circle.src} alt="circle"/></a>
+                </div>
+                <div>
+                    <a href="page">Résultats<br/><img id='circle' src={images.circle.src} alt="circle"/></a>
+                </div>
+            </div>
+
             <div className="informationContainer" style={{marginTop:'25vh'}}>
                 <p className="emphasisesInformation" >La partie à commencer il y a 2min</p>
             </div>

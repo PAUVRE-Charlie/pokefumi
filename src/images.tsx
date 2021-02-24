@@ -13,6 +13,10 @@ const images = {
     carapuce: {
         name: 'Carapuce',
         src: baseURL + 'carapuce.png'
+    },
+    circle: {
+        name: 'Circle',
+        src: baseURL + 'logoCercle.png'
     }
 }
 

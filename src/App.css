@@ -71,3 +71,20 @@
   font-weight: bold;
   color: #4d4949;
 }
+
+#circleContainer{
+  position:absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-content: center;
+}
+
+#circle {
+  height: 3em;
+}
+
+.menuContainer{
+  display: grid;
+  place-items: center;
+}
