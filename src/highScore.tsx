@@ -1,5 +1,5 @@
 import React from 'react'
-import { Match, Player, User } from './types';
+import { Match, Player, User, Pokemon } from './types';
 import PokemonHttpService from './httpService';
 import { useState } from 'react';
 
@@ -52,17 +52,27 @@ export default function HighScore() {
 
     // console.log(players);
 
-    const [pokemons, setPokemons] = useState([]);
+    const [pokemons, setPokemons] = useState<Pokemon[]>([]);
+    const [pokemon, setPokemon] = useState<Pokemon>();
 
     const pokeApiClient = new PokemonHttpService();
 
 
-    pokeApiClient.getPokemons().then(pokemons => console.log(pokemons));
+    pokeApiClient.getPokemon(113).then(pokemon => {
+        console.log(pokemon);
+        setPokemon(pokemon.results);
+    });
 
     
 
     return (
         <div>
+            {/* {
+                pokemons.length > 0 ? pokemons.map((pokemon) => {return <div>{pokemon.name}<br/></div>}) : <li>No pokemons</li>
+            } */}
+            {
+                (pokemon !== undefined) ? <li>{pokemon?.name}</li> : <li>No pokemon</li>
+            }
             {/* <ul className="listPlayers">
             {
                 players.map((player) => <li>{players.indexOf(player)+1 + '. ' + player.user.name}</li>)
