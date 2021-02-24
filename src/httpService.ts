@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-import { jsonTypePokemon, jsonTypePokemons, Pokemon, User } from './types';
+import { jsonTypePokemons, User } from './types';
 
 interface ServiceState {
   users: Array<User>,
@@ -36,7 +36,7 @@ export default class PokemonHttpService extends BasicHttpService {
   public loginUser = (userName: string) => this.post<ServiceState>(`${this.serviceUrl}/login`, {}, { name: userName })
 
   public getPokemons = () => this.get<jsonTypePokemons>(`${this.serviceUrl}pokemon/`, {})
-  public getPokemon = (id: number) => this.get<jsonTypePokemon>(`${this.serviceUrl}pokemon/${id}`, {})
+//   public getPokemon = (id: number) => this.get<jsonTypePokemon>(`${this.serviceUrl}pokemon/${id}`, {})
 
 }
 

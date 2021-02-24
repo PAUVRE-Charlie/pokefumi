@@ -98,30 +98,48 @@ export interface HeldItem {
     version_details: VersionDetails[]
 }
 
-export interface Pokemon {
-    abilities: AbilityPokemon[],
-    base_experience: number,
-    forms: Form[],
-    game_indices: GameIndice[],
-    height: number,
-    held_items: HeldItem[]
-    id: 113
-    is_default: true
-    location_area_encounters: "https://pokeapi.co/api/v2/pokemon/113/encounters"
-    moves: (121) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, …]
-    name: "chansey"
-    order: 170
-    species: {name: "chansey", url: "https://pokeapi.co/api/v2/pokemon-species/113/"}
-    sprites: {back_default: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/113.png", back_female: null, back_shiny: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/113.png", back_shiny_female: null, front_default: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png", …}
-    stats: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
-    types: [{…}]
-    weight: 346
+export interface VersionGroupDetails{
+    level_learned_at: number,
+    move_learn_method: {name: string, url: string}
+    version_group: {name: string, url: string}
 }
 
-export interface jsonTypePokemon{
-    count: number
-    next: string
-    previous: null
-    results: Pokemon
-} 
+export interface Move {
+    move: {name: string, url: string}
+    version_group_details: VersionGroupDetails[]
+}
+
+export interface Stat{
+    base_stat: number
+    effort: number
+    stat: {name: string, url: string}
+}
+
+// export interface Pokemon {
+//     abilities: AbilityPokemon[],
+//     base_experience: number,
+//     forms: Form[],
+//     game_indices: GameIndice[],
+//     height: number,
+//     held_items: HeldItem[]
+//     id: number,
+//     is_default: boolean,
+//     location_area_encounters: string,
+//     moves: Move[]
+//     name: string
+//     order: number
+//     species: {name: string, url: string}
+//     sprites: {back_default: string, back_female: null, back_shiny: string, back_shiny_female: null, front_default: string, front_female: null, front_shiny: string, 
+//     front_shiny_female: null, other: {dream_world: {front_default: string, front_female: null}, official_artwork: {front_default: string}}},
+//     stats: Stat[],
+//     types: [{…}]
+//     weight: 346
+// }
+
+// export interface jsonTypePokemon{
+//     count: number
+//     next: string
+//     previous: null
+//     results: Pokemon
+// } 
 
