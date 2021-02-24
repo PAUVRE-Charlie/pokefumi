@@ -5,7 +5,7 @@ export default function home() {
     return (
         <div className="homePage">
             <div className="listPages">
-                <PageLink link="" text="Connection"/>
+                <PageLink link="connexion" text="Connection"/>
             </div>
         </div>
     )
