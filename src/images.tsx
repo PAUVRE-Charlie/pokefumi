@@ -9,6 +9,10 @@ const images = {
     arene: {
         name: 'Arene',
         src: baseURL + 'arene.jpg'
+    },
+    carapuce: {
+        name: 'Carapuce',
+        src: baseURL + 'carapuce.png'
     }
 }
 

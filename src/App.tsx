@@ -7,6 +7,7 @@ import {Matches} from './Matches'
 import Players from './Players';
 import HighScore from './highScore';
 import Header from './header';
+import Match from './Match';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path={process.env.PUBLIC_URL + '/players'} component={Players} />
           <Route exact path={process.env.PUBLIC_URL + '/highscore'} component={HighScore} />
           <Route exact path={process.env.PUBLIC_URL + '/matches'} component={Matches} />
+          <Route exact path={process.env.PUBLIC_URL + '/match'} component={Match} />
         </body>
       </div>
     </Router>
