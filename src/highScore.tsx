@@ -39,8 +39,7 @@ export default function HighScore() {
 
     for(var i:number = 0; i<matchs.length; i++){
         var match = matchs[i];
-        var player = players.find((player) => player.user.id === match.winner);
-        console.log(player);
+        var player = players.find((player) => player.user.id === match.winner); 
         if(player != null) player.wins = player.wins + 1;
     }
 

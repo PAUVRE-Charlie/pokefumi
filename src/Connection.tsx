@@ -5,19 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function Connection() {
     return (
-      <div className="Connection">
-        <header className="Connection-header">
-            
-        </header>
-        <body>
-            <Form>
+      <div className="connectionPage">
+        
+           <div>
+                <Form>
                 <Form.Group controlId="formUsername">
                     <Form.Label>Nom d'utilisateur :</Form.Label>
                     <Form.Control type="username" placeholder="Entrez un nom d'utilisateur" />
-                </Form.Group>
-                <Form.Group controlId="formPassword">
-                    <Form.Label>Mot de passe :</Form.Label>
-                    <Form.Control type="password" placeholder="Entrez un mot de passe" />
                 </Form.Group>
 
             </Form>
@@ -26,7 +20,7 @@ export function Connection() {
                     Connexion
                 </Button>
             </div>
-        </body>
+           </div>
       </div>
     );
   }
