@@ -12,6 +12,7 @@ export default function home() {
                 <PageLink link="connexion" text="Connection"/>
                 <PageLink link="players" text="Joueurs"/>
                 <PageLink link="match" text="Match"/>
+                <PageLink link="matches" text="Créer un nouveau match"/>
             </div>
         </div>
 

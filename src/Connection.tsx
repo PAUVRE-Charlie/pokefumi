@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function Connection() {
     return (
@@ -18,10 +19,13 @@ export function Connection() {
                     <Form.Label>Mot de passe :</Form.Label>
                     <Form.Control type="password" placeholder="Entrez un mot de passe" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                Connexion
-                </Button>
+
             </Form>
+            <div>
+                <Button variant="primary" type="submit">
+                    Connexion
+                </Button>
+            </div>
         </body>
       </div>
     );
