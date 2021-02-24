@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ToggleButton from 'react-bootstrap/ToggleButton'
 
+
+
 export function Matches() {
+
+    const [link, setLink]=useState("")
+
+
     return (
       <div className="Matches">
         <header className="Matches-header">
@@ -42,11 +48,11 @@ export function Matches() {
                 </Col>
             <Col>
             <div>
-                <Button type="button">
+                <Button type="button" disabled={link==""?false:true} onClick={() => setLink("jaaj")}>
                     Créer un match vide
                 </Button>
                 <label>
-                    http://charlie_vs_lemonde.com
+                    {link}
                 </label>
             </div>
             </Col>
