@@ -46,16 +46,6 @@ export function Matches() {
                     Inviter le joueur
                 </Button>
                 </Col>
-            <Col>
-            <div>
-                <Button type="button" disabled={link==""?false:true} onClick={() => setLink("jaaj")}>
-                    Créer un match vide
-                </Button>
-                <label>
-                    {link}
-                </label>
-            </div>
-            </Col>
             </Row>
             </Form>
             </div>
