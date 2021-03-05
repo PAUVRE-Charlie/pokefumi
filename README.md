@@ -1,46 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Connection.tsx : pour se simplifier la vie en termes de fichier css pour rendre la page esthétique, nous avons choisi d'utiliser la librairie react-bootstrap couplée avec un module basique css correspondant (bootstrap.min.css). Cette librairie permet de créer des formulaires avec le mot clé "Form" plutôt que "form" avec des className prédéfinis qui permettent une mise en forme simple et jolie de la page de connexion. Comme demandé dans le cahier des charges, il n'y a que le champ "username" à remplir avant de submit. Un petit bout de code css est trouvable dans index.css pour légérement modifier la mise en page (centrer les objets). Malheuresement nous n'avons pas réussi à récupérer les informations entrées par l'utilisateur dans le champ "username" au moment de submit, nous n'avons donc pas réussi à stocker la liste des utilisateurs enregistrés sur le site.
+- Matches.tsx : pour la mise en forme de la page avec du css, il s'agit de la même méthode que pour le fichier connection.tsx. Pour pouvoir sélectionner l'adversaire à défier nous avons implémenté un bandeau déroulant avec la liste des joueurs en ligne, ainsi l'utilisateur peut sélectionner la personne qu'il souhaite affronter avant de submit pour inviter le joueur dans un match. idem, un bout de css est trouvable dans index.css. De même que pour connection, nous n'avons pas réussi à récupérer les informations entrées par l'utilisateur dans le menu déroulant au moment de submit, nous n'avons donc pas réussi à créer un lien de match pour les 2 joueurs concernés.
+- header.tsx : on utilise ce fichier comme template pour notre site afin de mettre à disposition la possiblité de se connecter de revenir à l'accueil depuis n'importe quelle vue.
+- home.tsx : c'est le fichier qui gère la vue de notre page de garde, on y affiche donc simplement un lien vers chaque autre vue du site.
+- Players.tsx : pour afficher la liste des joueurs on commence par la trier puis on récupère le nom de l'utilisateur (comme on doit respecter le format de l'API, un utilisateur c'est un et un id)
