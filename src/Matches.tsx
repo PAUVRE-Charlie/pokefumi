@@ -35,7 +35,7 @@ export function Matches() {
                 >
                         <option value="0">Choisir un joueur</option>
                         <option value="1">Charlie</option>
-                        <option value="2">Ton oncle en slip</option>
+                        <option value="2">Simon Pierre</option>
                         <option value="3">Nathan Olborki</option>
                         <option value="4">Rapha Krodal</option>
                 </Form.Control>
